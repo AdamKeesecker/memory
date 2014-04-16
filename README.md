@@ -1,7 +1,6 @@
-# client-template
+# Memory
 
-Serves as a template for client JavaScript applications.
-
+A fun memory game where you get no rewards for winning!
 It uses:
 * Jade
 * Less
