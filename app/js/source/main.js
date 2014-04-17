@@ -8,10 +8,11 @@
 
   function initialize(){
     $('#start').click(start);
+    $('#shuffle').click(populate);
   }
 
   function start(){
-    timer = setInterval(updateClock, 100);
+    // timer = setInterval(updateClock, 100);
     var $td = $('#game > tbody > tr > td');
     var count = $td.length;
 
@@ -22,7 +23,6 @@
       $(td).append($img);
       $img.attr('src', '../media/cat'+num+'.png');
     }
-    populate();
   }
 
   function updateClock(){
@@ -34,6 +34,7 @@
   }
 // N is count I is num
   function populate(){
+    timer = setInterval(updateClock, 100);
     var shuffled=[];
     var $td = $('#game > tbody > tr > td');
     var count = $td.length;
@@ -42,7 +43,7 @@
       shuffled.push($td.splice(num, 1)[0]);
       count=$td.length;
     }
-  return shuffled;
+    start();
   }
 
 }());
