@@ -32,9 +32,10 @@
       clearInterval(timer);
     }
   }
-// N is count I is num
+
   function populate(){
-    timer = setInterval(updateClock, 100);
+    debugger;
+    timer = setInterval(updateClock, 1000);
     var shuffled=[];
     var $td = $('#game > tbody > tr > td');
     var count = $td.length;
