@@ -4,6 +4,15 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+table{
+  margin: 0px 0px 10px 20px;
+  max-width:75%;
+  max-height:6%;
+}
+td{
+  width:100px;
+  height:150px;
+}
 
 .rotate{
   -webkit-transform: rotateX(180deg);
@@ -37,17 +46,14 @@ body{
   left:0px;
 }
 .front{
-  background-color:red;
   z-index:3;
 }
 .back{
-  background-color:blue;
   -webkit-transform: rotateX(180deg);
 }
 
-#game{
-  width:50%;
-  height:300px;
+#board{
+  border: 2px solid black;
 }
 .background{
 
